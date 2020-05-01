@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de0f11c2-2095-499b-bed3-7947073d096b" name="Default Changelist" comment="" />
+    <list default="true" id="de0f11c2-2095-499b-bed3-7947073d096b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bash/k8s.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1bJVjeIr422Bnn23dpgW2poSs59" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Bash" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -37,5 +47,29 @@
       <screen x="70" y="27" width="1850" height="1053" />
     </state>
     <state x="551" y="157" width="1024" height="852" key="#Project_Structure/70.27.1850.1053@70.27.1850.1053" timestamp="1588350331781" />
+    <state x="526" y="238" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588350345048">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="526" y="238" key="#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1588350345048" />
+    <state x="682" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1588350729683">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="682" y="355" width="615" height="403" key="#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053" timestamp="1588350729683" />
+    <state x="908" y="480" width="525" height="207" key="Github.ShareDialog" timestamp="1588350385231">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="908" y="480" width="525" height="207" key="Github.ShareDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1588350385231" />
+    <state x="841" y="267" width="443" height="633" key="Github.UntrackedFilesDialog" timestamp="1588350391132">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="841" y="267" width="443" height="633" key="Github.UntrackedFilesDialog/70.27.1850.1053@70.27.1850.1053" timestamp="1588350391132" />
+    <state x="578" y="290" width="824" height="533" key="IDE.errors.dialog" timestamp="1588353761965">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="578" y="290" width="824" height="533" key="IDE.errors.dialog/70.27.1850.1053@70.27.1850.1053" timestamp="1588353761965" />
+    <state x="528" y="51" width="1197" height="963" key="SettingsEditor" timestamp="1588377414258">
+      <screen x="70" y="27" width="1850" height="1053" />
+    </state>
+    <state x="528" y="51" width="1197" height="963" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1588377414258" />
   </component>
 </project>
