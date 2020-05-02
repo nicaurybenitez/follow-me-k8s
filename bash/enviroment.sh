@@ -3,7 +3,7 @@ export ENCRYPTION_KEY=$(head -c 32 /dev/urandom | base64)
 export NODE_IPS=(192.168.122.37 192.168.122.185 192.168.122.7)
 export NODE_NAMES=(k8s01 k8s02 k8s03)
 export ETCD_ENDPOINTS="https://192.168.122.37:2379,https://192.168.122.185:2379,https://192.168.122.7:2379"
-export ETCD_NODES="k8s-01=https://192.168.122.185:2380,k8s-02=https://192.168.122.185:2380,k8s-03=https://192.168.122.7:2380"
+export ETCD_NODES="k8s01=https://192.168.122.185:2380,k8s02=https://192.168.122.185:2380,k8s03=https://192.168.122.7:2380"
 export KUBE_APISERVER="https://127.0.0.1:8443"
 export IFACE="enp1s0"
 export ETCD_DATA_DIR="/data/k8s/etcd/data"
