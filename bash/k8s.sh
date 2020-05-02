@@ -1,6 +1,6 @@
 #!/bin/bash
 # Demonstrate how read actually works
-source "$(pwd)/spinner.sh"
+source  "$(pwd)/spinner.sh"
 echo Please add the IP of worker for configure a k8s cluster!
 read IP01 
 echo Please the hostname for the $IP01
@@ -18,7 +18,7 @@ read HOSTNAME03
 echo Your first IP and hostname was: $IP01 $HOSTNAME01
 echo Your second IP and hostname was: $IP02 $HOSTNAME02
 echo Your third IP and hostname was: $IP03 $HOSTNAME03
-echo wait 🕛 ...
+echo wait...
 start_spinner '🔥need build the /etc/hosts files sleeping for 2 secs...'
 sleep 2
 cat >> /etc/hosts <<EOF
@@ -96,7 +96,7 @@ do
    scp kubernetes.conf root@${s}:/etc/sysctl.d/ 
    ssh root@${s} sysctl -p /etc/sysctl.d/kubernetes.conf
 done
-echo ❤️ super estamos a 7989745 lineas de terminar!
+echo super estamos a 928849494 lineas de  terminar!
 
 echo 🕛 la hora del sistema UTC y habilitar la sincro 
 timedatectl set-timezone UTC && systemctl enable chronyd && systemctl start chronyd
@@ -113,4 +113,4 @@ for s in $HOSTNAME02 $HOSTNAME03
 do
    ssh root@${s} mkdir -p /opt/k8s/{bin,work} /etc/{kubernetes,etcd}/cert
 done
-echo super estamos a 928849494 de  terminar!
+echo super estamos a 928849494 lineas de  terminar!
