@@ -1,6 +1,7 @@
 #!/bin/bash
 # Demonstrate how read actually works
-source  "$(pwd)/spinner.sh"
+source "$(pwd)/spinner.sh"
+source "$(pwd)/environment.s"
 echo Please add the IP of worker for configure a k8s cluster!
 read IP01 
 echo Please the hostname for the $IP01
@@ -104,13 +105,84 @@ timedatectl set-timezone UTC && systemctl enable chronyd && systemctl start chro
 echo run the command on $HOSTNAME02 and $HOSTNAME03
 for s in $HOSTNAME02 $HOSTNAME03
 do
-   ssh root@${s} timedatectl set-timezone UTC && systemctl enable chronyd && systemctl start chronyd
+   ssh root@${s} "timedatectl set-timezone UTC && systemctl enable chronyd && systemctl start chronyd"
 done
-echo creamos el workdir
+
+
+echo creamos el workdir y otros directorios importantes
 mkdir -p /opt/k8s/{bin,work} /etc/{kubernetes,etcd}/cert
+mkdir -p /opt/k8s/cert && cd /opt/k8s/work
+
+
 echo run the command on $HOSTNAME02 and $HOSTNAME03
 for s in $HOSTNAME02 $HOSTNAME03
 do
-   ssh root@${s} mkdir -p /opt/k8s/{bin,work} /etc/{kubernetes,etcd}/cert
+  ssh root@${s} "mkdir -p /opt/k8s/{bin,work} /etc/{kubernetes,etcd}/cert"
+  ssh root@${s} "mkdir -p /opt/k8s/cert && cd /opt/k8s/work"
 done
 echo super estamos a 928849494 lineas de  terminar!
+
+echo  ahora vamos a ejecutar todos esto en todos los nodos
+for node_ip in ${NODE_IPS[@]}
+  do
+    echo ">>> ${node_ip}"
+    scp environment.sh root@${node_ip}:/opt/k8s/bin/
+    ssh root@${node_ip} "chmod +x /opt/k8s/bin/*"
+  done
+#Vamos a instalar las herramientas que nos serviran para generar los certificados esto lo ejecutaremos
+#solo en el nodo maestro.
+wget https://github.com/cloudflare/cfssl/releases/download/v1.4.1/cfssl_1.4.1_linux_amd64
+mv cfssl_1.4.1_linux_amd64 /opt/k8s/bin/cfssl
+
+wget https://github.com/cloudflare/cfssl/releases/download/v1.4.1/cfssljson_1.4.1_linux_amd64
+mv cfssljson_1.4.1_linux_amd64 /opt/k8s/bin/cfssljson
+
+wget https://github.com/cloudflare/cfssl/releases/download/v1.4.1/cfssl-certinfo_1.4.1_linux_amd64
+mv cfssl-certinfo_1.4.1_linux_amd64 /opt/k8s/bin/cfssl-certinfo
+#Ahora vamos crear el archivo de configuración para el certificado en el nodo maetro se ejecutara este cambio
+chmod +x /opt/k8s/bin/*
+export PATH=/opt/k8s/bin:$PATH
+cd /opt/k8s/work
+cat > ca-config.json <<EOF
+{
+  "signing": {
+    "default": {
+      "expiry": "87600h"
+    },
+    "profiles": {
+      "kubernetes": {
+        "usages": [
+            "signing",
+            "key encipherment",
+            "server auth",
+            "client auth"
+        ],
+        "expiry": "876000h"
+      }
+    }
+  }
+}
+EOF
+# Y ahora este
+cat > ca-csr.json <<EOF
+{
+  "CN": "kubernetes-ca",
+  "key": {
+    "algo": "rsa",
+    "size": 2048
+  },
+  "names": [
+    {
+      "C": "CN",
+      "ST": "Barcelona",
+      "L": "Barcelona",
+      "O": "k8s",
+      "OU": "ezzyads"
+    }
+  ],
+  "ca": {
+    "expiry": "876000h"
+ }
+}
+EOF
+
