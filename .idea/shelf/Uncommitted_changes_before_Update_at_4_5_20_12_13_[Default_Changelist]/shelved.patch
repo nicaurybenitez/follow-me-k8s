@@ -1,0 +1,52 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"de0f11c2-2095-499b-bed3-7947073d096b\" name=\"Default Changelist\" comment=\"\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/vcs.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/bash/k8s.sh\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1bJVjeIr422Bnn23dpgW2poSs59\" />\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"ASKED_SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"project.structure.last.edited\" value=\"Modules\" />\n    <property name=\"project.structure.proportion\" value=\"0.0\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settingsdialog.IDE.editor.colors.Bash\" />\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"de0f11c2-2095-499b-bed3-7947073d096b\" name=\"Default Changelist\" comment=\"\" />\n      <created>1588350319594</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1588350319594</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"551\" y=\"157\" width=\"1024\" height=\"852\" key=\"#Project_Structure\" timestamp=\"1588350331781\">\n      <screen x=\"70\" y=\"27\" width=\"1850\" height=\"1053\" />\n    </state>\n    <state x=\"551\" y=\"157\" width=\"1024\" height=\"852\" key=\"#Project_Structure/70.27.1850.1053@70.27.1850.1053\" timestamp=\"1588350331781\" />\n    <state x=\"526\" y=\"238\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog\" timestamp=\"1588350345048\">\n      <screen x=\"70\" y=\"27\" width=\"1850\" height=\"1053\" />\n    </state>\n    <state x=\"526\" y=\"238\" key=\"#com.intellij.execution.impl.EditConfigurationsDialog/70.27.1850.1053@70.27.1850.1053\" timestamp=\"1588350345048\" />\n    <state x=\"682\" y=\"355\" width=\"615\" height=\"403\" key=\"#com.intellij.fileTypes.FileTypeChooser\" timestamp=\"1588350729683\">\n      <screen x=\"70\" y=\"27\" width=\"1850\" height=\"1053\" />\n    </state>\n    <state x=\"682\" y=\"355\" width=\"615\" height=\"403\" key=\"#com.intellij.fileTypes.FileTypeChooser/70.27.1850.1053@70.27.1850.1053\" timestamp=\"1588350729683\" />\n    <state x=\"908\" y=\"480\" width=\"525\" height=\"207\" key=\"Github.ShareDialog\" timestamp=\"1588350385231\">\n      <screen x=\"70\" y=\"27\" width=\"1850\" height=\"1053\" />\n    </state>\n    <state x=\"908\" y=\"480\" width=\"525\" height=\"207\" key=\"Github.ShareDialog/70.27.1850.1053@70.27.1850.1053\" timestamp=\"1588350385231\" />\n    <state x=\"841\" y=\"267\" width=\"443\" height=\"633\" key=\"Github.UntrackedFilesDialog\" timestamp=\"1588350391132\">\n      <screen x=\"70\" y=\"27\" width=\"1850\" height=\"1053\" />\n    </state>\n    <state x=\"841\" y=\"267\" width=\"443\" height=\"633\" key=\"Github.UntrackedFilesDialog/70.27.1850.1053@70.27.1850.1053\" timestamp=\"1588350391132\" />\n    <state x=\"578\" y=\"290\" width=\"824\" height=\"533\" key=\"IDE.errors.dialog\" timestamp=\"1588353761965\">\n      <screen x=\"70\" y=\"27\" width=\"1850\" height=\"1053\" />\n    </state>\n    <state x=\"578\" y=\"290\" width=\"824\" height=\"533\" key=\"IDE.errors.dialog/70.27.1850.1053@70.27.1850.1053\" timestamp=\"1588353761965\" />\n    <state x=\"528\" y=\"51\" width=\"1197\" height=\"963\" key=\"SettingsEditor\" timestamp=\"1588377414258\">\n      <screen x=\"70\" y=\"27\" width=\"1850\" height=\"1053\" />\n    </state>\n    <state x=\"528\" y=\"51\" width=\"1197\" height=\"963\" key=\"SettingsEditor/70.27.1850.1053@70.27.1850.1053\" timestamp=\"1588377414258\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision ccdba031ed1d593aa9681a50af2bb044bd355f74)
++++ .idea/workspace.xml	(date 1588377868125)
+@@ -2,8 +2,6 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="de0f11c2-2095-499b-bed3-7947073d096b" name="Default Changelist" comment="">
+-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/bash/k8s.sh" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+@@ -27,7 +25,7 @@
+     <property name="project.structure.last.edited" value="Modules" />
+     <property name="project.structure.proportion" value="0.0" />
+     <property name="project.structure.side.proportion" value="0.0" />
+-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Bash" />
++    <property name="settings.editor.selected.configurable" value="Errors" />
+   </component>
+   <component name="SvnConfiguration">
+     <configuration />
+@@ -43,6 +41,10 @@
+     <servers />
+   </component>
+   <component name="WindowStateProjectService">
++    <state x="863" y="419" width="628" height="514" key="#Notifications" timestamp="1588377753011">
++      <screen x="67" y="27" width="1853" height="1053" />
++    </state>
++    <state x="863" y="419" width="628" height="514" key="#Notifications/67.27.1853.1053@67.27.1853.1053" timestamp="1588377753011" />
+     <state x="551" y="157" width="1024" height="852" key="#Project_Structure" timestamp="1588350331781">
+       <screen x="70" y="27" width="1850" height="1053" />
+     </state>
+@@ -67,9 +69,10 @@
+       <screen x="70" y="27" width="1850" height="1053" />
+     </state>
+     <state x="578" y="290" width="824" height="533" key="IDE.errors.dialog/70.27.1850.1053@70.27.1850.1053" timestamp="1588353761965" />
+-    <state x="528" y="51" width="1197" height="963" key="SettingsEditor" timestamp="1588377414258">
+-      <screen x="70" y="27" width="1850" height="1053" />
++    <state x="526" y="51" width="1197" height="963" key="SettingsEditor" timestamp="1588377865716">
++      <screen x="67" y="27" width="1853" height="1053" />
+     </state>
++    <state x="526" y="51" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1588377865716" />
+     <state x="528" y="51" width="1197" height="963" key="SettingsEditor/70.27.1850.1053@70.27.1850.1053" timestamp="1588377414258" />
+   </component>
+ </project>
+\ No newline at end of file
